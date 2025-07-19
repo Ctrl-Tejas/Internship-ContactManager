@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Contacts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="navbar-title">My Contact</a>
+            <a href="add-contact.html">Add Contact</a>
+            <a href="view-contacts.html">View Contact</a>
+            <a href="edit-contact.html">Edit Contact</a>
+        </div>
+        <div class="navbar-right">
+            <button>Login</button>
+            <button>Signup</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <h2>View Contacts</h2>
+            <div id="contactList"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2025 Developed By MIT Students.
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            renderContacts('contactList');
+        });
+    </script>
+</body>
+</html>
